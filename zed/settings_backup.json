@@ -1,0 +1,135 @@
+// Zed settings
+//
+// For information on how to configure Zed, see the Zed
+// documentation: https://zed.dev/docs/configuring-zed
+//
+// To see all of Zed's default settings without changing your
+// custom settings, run `zed: open default settings` from the
+// command palette (cmd-shift-p / ctrl-shift-p)
+{
+  "icon_theme": "Colored Zed Icons Theme Dark",
+  "show_edit_predictions": false,
+  "inline_completions": {
+    "disabled_globs": [
+      "**/.env*",
+      "**/*.pem",
+      "**/*.key",
+      "**/*.cert",
+      "**/*.crt",
+      "**/secrets.yml"
+    ]
+  },
+  "show_inline_completions": true,
+  "features": {
+    "inline_completion_provider": "copilot"
+  },
+  "assistant": {
+    "default_model": {
+      "provider": "zed.dev",
+      "model": "gpt-4o"
+    },
+    "version": "2"
+  },
+  "languages": {
+    "Go": {
+      "show_inline_completions": false
+    },
+    "Dart": {
+      "show_inline_completions": true
+    },
+    "Proto": {
+      "show_inline_completions": true
+    },
+    "SQL": {
+      "show_inline_completions": true
+    },
+    "JSONC": {
+      "show_inline_completions": false
+    },
+    "TSX": {
+      "show_inline_completions": true
+    },
+    "Shell Script": {
+      "show_inline_completions": true
+    },
+    "Rust": {
+      "show_edit_predictions": false,
+      "show_inline_completions": true
+    },
+    "Java": {
+      "show_inline_completions": false
+    },
+    "C++": {
+      "show_inline_completions": false
+    },
+    "C": {
+      "show_inline_completions": false
+    }
+  },
+  "ui_font": "Source Code Pro",
+  "ui_font_size": 20,
+  "buffer_font_size": 21.0,
+  "theme": {
+    "mode": "dark",
+    "light": "Harlock Ligth",
+    "dark": "VSCode Dark Modern"
+  },
+  "lsp": {
+    "rust-analyzer": {
+      "initialization_options": {
+        "completion": {
+          "snippets": {
+            "custom": {
+              "Arc::new": {
+                "postfix": "arc",
+                "body": ["Arc::new(${receiver})"],
+                "requires": "std::sync::Arc",
+                "scope": "expr"
+              },
+              "Some": {
+                "postfix": "some",
+                "body": ["Some(${receiver})"],
+                "scope": "expr"
+              },
+              "Ok": {
+                "postfix": "ok",
+                "body": ["Ok(${receiver})"],
+                "scope": "expr"
+              },
+              "Rc::new": {
+                "postfix": "rc",
+                "body": ["Rc::new(${receiver})"],
+                "requires": "std::rc::Rc",
+                "scope": "expr"
+              },
+              "Box::pin": {
+                "postfix": "boxpin",
+                "body": ["Box::pin(${receiver})"],
+                "requires": "std::boxed::Box",
+                "scope": "expr"
+              },
+              "vec!": {
+                "postfix": "vec",
+                "body": ["vec![${receiver}]"],
+                "description": "vec![]",
+                "scope": "expr"
+              },
+              "Box::new": {
+                "postfix": "box",
+                "body": ["Box::new(${receiver})"],
+                "requires": "std::boxed::Box",
+                "scope": "expr"
+              },
+              "HashMap::new": {
+                "postfix": "hashmap",
+                "body": ["HashMap::new()"],
+                "requires": "std::collections::HashMap",
+                "scope": "expr"
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

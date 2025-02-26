@@ -1,0 +1,239 @@
+{
+  "$schema": "https://zed.dev/schema/themes/v0.2.0.json",
+  "name": "harlock",
+  "author": "harlock024!",
+  "themes": [
+    {
+      "name": "Wint Dark",
+      "appearance": "dark",
+      "style": {
+        "border": "#44444",
+        "border.variant": "#191919",
+        "border.focused": "null",
+        "border.selected": null,
+        "border.trasparent": "#191919",
+        "border.disabled": "#555555",
+        "elevated_surface.background": "#080808",
+        "surface.background": "#080808",
+        "background": "#000000",
+        "element.background": "#191919",
+        "element.hover": "#191919",
+        "element.disabled": "#555555",
+        "drop_target.background": null,
+        "ghost_element.hover": "#555555",
+        "ghost_element.active": null,
+        "element.selected": "#AAAAA",
+        "text": "#DDDDDD",
+        "text.muted": "#747A7A",
+        "text.placeholder": "#555555",
+        "text.disable": "#555555",
+        "text.accent": "#7788AA",
+        "status_bar.background": "#444444",
+        "title_bar.background": "#444444",
+        "toolbar.background": "#191919",
+        "tab_bar.background": "#191919",
+        "tab.active_background": "#444444",
+        "search.match_background": "#242AAA",
+        "panel.background": "#080808",
+        "panel.focused_border": null,
+        "pane.focused_border": null,
+        "scrollbar.thumb.background": null,
+        "scrollbar.thumb.border": "#080808",
+        "scrollbar.track.background": "",
+        "scrollbar.track.border": "#080808",
+        "editor.foreground": "#DDDDDD",
+        "editor.background": "#080808",
+        "editor.gutter.background": "#080808",
+        "editor.subheader.background": "null",
+        "editor.active_line.background": "#2A2A2A",
+        "editor.highlighted_line.background": null,
+        "editor.line_number": "#747A7A",
+        "editor.active_line_number": "#DDDDDD",
+        "editor.invisible": null,
+        "editor.wrap_guide": "#191919",
+        "editor.active_wrap_guide": "#191919",
+        "editor.document_highlight.read_background": "#555555",
+        "editor.document_highlight.write_background": "#708090",
+        "terminal.background": "#080808",
+        "terminal.foreground": "#DDDDDD",
+        "terminal.bright_foreground": null,
+        "terminal.dim_foreground": null,
+        "terminal.ansi.black": "#000000",
+        "terminal.ansi.bright_black": "#444444",
+        "terminal.ansi.dim_black": null,
+        "terminal.ansi.red": "#D70000",
+        "terminal.ansi.bright_red": "#D70000",
+        "terminal.ansi.dim_red": null,
+        "terminal.ansi.green": "#789978",
+        "terminal.ansi.bright_green": "#789978",
+        "terminal.ansi.dim_green": null,
+        "terminal.ansi.yellow": "#FFA888",
+        "terminal.ansi.bright_yellow": "#FFA888",
+        "terminal.ansi.dim_yellow": null,
+        "terminal.ansi.blue": "#7788AA",
+        "terminal.ansi.bright_blue": "#7788AA",
+        "terminal.ansi.dim_blue": null,
+        "terminal.ansi.magenta": "#708090",
+        "terminal.ansi.bright_magenta": "#708090",
+        "terminal.ansi.dim_magenta": null,
+        "terminal.ansi.cyan": "#DEEEED",
+        "terminal.ansi.bright_cyan": "#DEEEED",
+        "terminal.ansi.dim_cyan": null,
+        "terminal.ansi.white": "#DDDDDD",
+        "terminal.ansi.bright_white": "#DDDDDD",
+        "terminal.ansi.dim_white": null,
+        "link_text.hover": "#789978",
+        "conflict": "#D70000",
+        "conflict.background": null,
+        "conflict.border": null,
+        "created": "#1FAD64",
+        "created.background": null,
+        "created.border": null,
+        "deleted": null,
+        "deleted.background": null,
+        "deleted.border": null,
+        "error": null,
+        "error.border": null,
+        "error.background": null,
+        "hidden": "#747A7A",
+        "hidden.background": null,
+        "hidden.border": null,
+        "modified": "#2A2AAA",
+        "warning": "#FFA888",
+        "players": [
+          {
+            "cursor": "#7788AA",
+            "background": "#444444",
+            "selection": "#444444"
+          },
+          {
+            "cursor": "#789978",
+            "background": "#789978",
+            "selection": "#444444"
+          },
+          {
+            "cursor": "#FFA888",
+            "background": "#FFA888",
+            "selection": "#FFA888"
+          },
+          {
+            "cursor": "#708090",
+            "background": "#708090",
+            "selection": "#708090"
+          },
+          {
+            "cursor": "#DEEEED",
+            "background": "#DEEEED",
+            "selection": "#DEEEED"
+          },
+          {
+            "cursor": "#D70000",
+            "background": "#D70000",
+            "selection": "#D70000"
+          },
+          {
+            "cursor": "#DDDDDD",
+            "background": "#DDDDDD",
+            "selection": "#DDDDDD"
+          },
+          {
+            "cursor": "#242AAA",
+            "background": "#242AAA",
+            "selection": "#242AAA"
+          }
+        ],
+        "syntax": {
+          "attribute": {
+            "color": null,
+            "font_style": null,
+            "font_weight": 300
+          },
+          "boolean": {
+            "color": null,
+            "font_weight": 100
+          },
+          "comment": {
+            "color": null
+          },
+          "comment.doc": {
+            "color": null
+          },
+          "constant": {
+            "color": null,
+            "font_weight": 600
+          },
+          "constructor": {
+            "color": null,
+            "font_style": null,
+            "font_weight": null
+          },
+          "embeddde": {
+            "color": null,
+            "font_style": "normal",
+            "font_weight": 900
+          },
+          "function": {
+            "color": null,
+            "font_weight": 900
+          },
+          "keyword": {
+            "color": null,
+            "font_weight": 900
+          },
+          "link_text": {
+            "color": null,
+            "font_style": "normal"
+          },
+          "link_uri": {
+            "color": null,
+            "font_style": "italic",
+            "font_weight": null
+          },
+          "number": {
+            "color": null
+          },
+          "string": {
+            "color": null
+          },
+          "string.escape": {
+            "color": null
+          },
+          "string.regex": {
+            "color": null
+          },
+          "string.special": {
+            "color": null
+          },
+          "tag": {
+            "color": null
+          },
+          "text.literal": {
+            "color": "null"
+          },
+          "title": {
+            "color": "null"
+          },
+          "type": {
+            "color": "null",
+            "font_weight": 200
+          },
+          "variable": {
+            "color": null,
+            "font_style": null,
+            "font_weight": null
+          },
+          "variable.special": {
+            "color": null
+          }
+        }
+      }
+    },
+    {
+      "name": "Wint ligth",
+      "appearance": "light",
+      "style": {
+        "background": "#fff"
+      }
+    }
+  ]
+}
