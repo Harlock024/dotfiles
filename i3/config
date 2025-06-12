@@ -49,7 +49,7 @@ floating_modifier $mod
 tiling_drag modifier titlebar
 
 # start a terminal
-bindsym $mod+Return exec alacritty
+bindsym $mod+Return exec warp-terminal
 
 # kill focused window
 bindsym $mod+q kill
@@ -220,8 +220,7 @@ bindsym $mod+o exec --no-startup-id .config/rofi/powermenu/type-3/powermenu.sh
 # POLYBAR
 
 exec_always --no-startup-id polybar example
-exec_always --no-startup-id feh --bg-fill wallpapers/wallhaven-5gxvv3.png
-
+exec_always --no-startup-id feh --bg-fill wallpapers/wallhaven-zmrz9y.png
 
 # brigthnes controllers
 bindsym XF86MonBrightnessUp exec --no-startup-id brightnessctl set +5%
@@ -251,6 +250,5 @@ exec --no-startup-id xinput set-prop 8 "libinput Natural Scrolling Enabled" 1
 exec --no-startup-id udiskie -t &
 
 
-# flameshout 
+# flameshout
 bindsym $mod+Shift+c exec --no-startup-id flameshot gui
- 

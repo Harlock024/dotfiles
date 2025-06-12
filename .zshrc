@@ -104,12 +104,23 @@ alias cat='bat'
 
 alias zed='zeditor'
 
+alias wind='/opt/Windsurf/bin/windsurf'
+
+
+#alias cursor = "/home/harlock024/Applications/cursor_7b054393e4ad2bf7f0ffcfd28a0eb59d.AppImage"
+
+#alias code="/opt/VSCode-linux-x64/code&"
+
+
 source ~/.zsh_functions
 
 
-eval "$(starship init zsh)" 
+eval "$(starship init zsh)"
 
 eval "$(zoxide init zsh)"
+
+
+export PATH="$PATH:$(go env GOPATH)/bin"
 
 # Establecer DOTNET_ROOT en la carpeta de instalación de .NET
 export DOTNET_ROOT=$HOME/.dotnet
@@ -131,12 +142,10 @@ source <(ng completion script)
 [ -s "/home/harlock024/.bun/_bun" ] && source "/home/harlock024/.bun/_bun"
 
 
-
-
-
-
 #export CHROME_BIN="/usr/bin/google-chrome"
-export CHROME_BIN="/usr/bin/chromiun"
+export CHROME_EXECUTABLE="/usr/bin/google-chrome-stable"
+
+#export CHROME_BIN="/usr/bin/chromiun"
 
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
@@ -146,7 +155,6 @@ export NVM_DIR="$HOME/.nvm"
 export PATH="/usr/local/bin:$PATH"
 
 
-export PATH="$DOTNET_ROOT:$DOTNET_ROOT/tools:$ANDROID_HOME/platform-tools:$ANDROID_HOME/emulator:$ANDROID_HOME/tools:$ANDROID_HOME/build-tools:$PATH"
 
 
 
@@ -156,10 +164,26 @@ PATH=~/.console-ninja/.bin:$PATH
 export BUN_INSTALL="$HOME/.bun"
 export PATH="$BUN_INSTALL/bin:$PATH"
 
-alias netbeans="~/Descargas/netbeans-20-bin/netbeans/bin/netbeans"
+alias netbeans-20="/opt/netbeans-20-bin/netbeans"
 
-export ANDROID_HOME=$HOME/Android/Sdk
+
+export PATH="$HOME/go/bin:$PATH"
+
+
+
+#export _JAVA_OPTIONS="-Dawt.useSystemAAFontSettings=on -Dswing.aatext=true"
+
+# pnpm
+export PNPM_HOME="/home/harlock024/.local/share/pnpm"
+case ":$PATH:" in
+  *":$PNPM_HOME:"*) ;;
+  *) export PATH="$PNPM_HOME:$PATH" ;;
+esac
+# pnpm end
+
+# Turso
+export PATH="$PATH:/home/harlock024/.turso"
+
+export PATH=$ANDROID_SDK_ROOT/cmdline-tools/latest/bin:$ANDROID_SDK_ROOT/platform-tools:$ANDROID_SDK_ROOT/emulator:$PATH
 export ANDROID_SDK_ROOT=$HOME/Android/Sdk
-export PATH=$ANDROID_HOME/cmdline-tools/latest/bin:$ANDROID_HOME/platform-tools:$ANDROID_HOME/emulator:$ANDROID_HOME/tools:$ANDROID_HOME/tools/bin:$PATH
-
-export _JAVA_OPTIONS="-Dawt.useSystemAAFontSettings=on -Dswing.aatext=true"
+export PATH=$ANDROID_SDK_ROOT/emulator:$ANDROID_SDK_ROOT/tools:$ANDROID_SDK_ROOT/tools/bin:$ANDROID_SDK_ROOT/platform-tools:$PATH
