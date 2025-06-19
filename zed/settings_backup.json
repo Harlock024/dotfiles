@@ -7,9 +7,9 @@
 // custom settings, run `zed: open default settings` from the
 // command palette (cmd-shift-p / ctrl-shift-p)
 {
-  "icon_theme": "Colored Zed Icons Theme Dark",
-  "show_edit_predictions": false,
-  "inline_completions": {
+  "icon_theme": "Zed (Default)",
+  "show_edit_predictions": true,
+  "edit_predictions": {
     "disabled_globs": [
       "**/.env*",
       "**/*.pem",
@@ -19,51 +19,50 @@
       "**/secrets.yml"
     ]
   },
-  "show_inline_completions": true,
+
   "features": {
-    "inline_completion_provider": "copilot"
+    "edit_prediction_provider": "zed"
   },
   "assistant": {
     "default_model": {
       "provider": "zed.dev",
-      "model": "gpt-4o"
+      "model": "claude-3-5-sonnet-latest"
     },
     "version": "2"
   },
   "languages": {
     "Go": {
-      "show_inline_completions": false
+      "show_edit_predictions": false
     },
     "Dart": {
-      "show_inline_completions": true
+      "show_edit_predictions": true
     },
     "Proto": {
-      "show_inline_completions": true
+      "show_edit_predictions": true
     },
     "SQL": {
-      "show_inline_completions": true
+      "show_edit_predictions": true
     },
     "JSONC": {
-      "show_inline_completions": false
+      "show_edit_predictions": true
     },
     "TSX": {
-      "show_inline_completions": true
+      "show_edit_predictions": true
     },
     "Shell Script": {
-      "show_inline_completions": true
+      "show_edit_predictions": true
     },
     "Rust": {
-      "show_edit_predictions": false,
-      "show_inline_completions": true
+      "show_edit_predictions": true
     },
     "Java": {
-      "show_inline_completions": false
+      "show_edit_predictions": false
     },
     "C++": {
-      "show_inline_completions": false
+      "show_edit_predictions": false
     },
     "C": {
-      "show_inline_completions": false
+      "show_edit_predictions": false
     }
   },
   "ui_font": "Source Code Pro",
@@ -72,7 +71,7 @@
   "theme": {
     "mode": "dark",
     "light": "Harlock Ligth",
-    "dark": "VSCode Dark Modern"
+    "dark": "Warm"
   },
   "lsp": {
     "rust-analyzer": {
