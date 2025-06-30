@@ -27,5 +27,5 @@ elif [[ "$status" == "Discharging" ]]; then
 	icon="$icon"
 fi
 
-echo "$icon $battery"
+echo "$icon $percentage %"
 

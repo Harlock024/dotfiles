@@ -1,0 +1,48 @@
+* {
+  font: "JetBrainsMono Nerd Font 10";
+  background: #1e1e2e;
+  foreground: #ffffff;
+  border: 0;
+  padding: 5px;
+}
+
+window {
+  width: 250px;
+  transparency: "real";
+  location: north;
+  anchor: north;
+  y-offset: 30;
+  border: 2px;
+  border-color: #89b4fa;
+  background-color: @background;
+}
+
+mainbox {
+  background-color: @background;
+  padding: 10px;
+}
+
+listview {
+  spacing: 5px;
+  lines: 5;
+  scrollbar: false;
+}
+
+element {
+  padding: 5px;
+  background-color: transparent;
+  text-color: @foreground;
+}
+
+element selected {
+  background-color: #89b4fa;
+  text-color: #1e1e2e;
+}
+
+prompt {
+  enabled: true;
+  padding: 5px;
+  text-color: #89b4fa;
+}
+
+

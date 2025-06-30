@@ -35,36 +35,34 @@ blue    = "#81A1C1"
 magenta = "#B48EAD"
 cyan    = "#88C0D0"
 white   = "#f2f7ff"
-purple  = "#673AB7"
 
 [bar/example]
 width = 100%
 height = 35
-radius = 6
+;radius = 6
 
-;dpi = 96
+; dpi = 96
 
 background = ${colors.black}
 foreground = ${colors.white}
 
-line-size = 3px
+line-size = 3pt
 
-border-size = 8px
-;border-color = ${colors.purple}
-
+border-size = 2px
+border-color = ${colors.black}
 
 margin-top = 10
 margin-bottom = 10
 margin-left = 10
 margin-right = 10
 
-padding-left = 1
+padding-left = 0
 padding-right = 1
 
 module-margin = 1
 
- ;separator = 
- ;separator-foreground = ${colors.disabled}
+; separator = |
+; separator-foreground = ${colors.disabled}
 
 
 font-0 = "Inter:style=SemiBold:size=12;2"
@@ -72,7 +70,7 @@ font-1 = "FontAwesome:size=12;2"
 
 modules-left = xworkspaces 
 modules-center = date
-modules-right =  bluetooth  pulseaudio network   battery powermenu
+modules-right =  cpu bluetooth  pulseaudio network  battery powermenu
 
 [module/systray]
 type = internal/tray
@@ -148,7 +146,7 @@ label-disconnected = %{F#F0C674}%ifname%%{F#707880} disconnected
 
 [module/bluetooth]
 type = custom/script
-exec = bluetoothctl show | grep -q "Powered: yes" && echo " " || echo ""
+exec = bluetoothctl show | grep -q "Powered: yes" && echo " Bluetooth: ON" || echo " Bluetooth: OFF"
 interval = 5
 label = %output%
 click-left = blueman-manager
@@ -197,7 +195,7 @@ label-foreground = ${colors.white}
 [module/battery]
 type = custom/script
 exec =  ~/.config/polybar/battery.sh
-interval = 10
+interval = 3
 
 [settings]
 screenchange-reload = true
